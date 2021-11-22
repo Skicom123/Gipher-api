@@ -5,6 +5,7 @@ import "./App.css";
 import {NavLink, Route, Routes, Navigate } from "react-router-dom";
 import Categories from "./components/Categories";
 import Detail from "./components/Detail"
+import DetailCT from "./components/DetailCT"
 import About from "./components/About";
 
 
@@ -18,21 +19,22 @@ const App = () => {
       </header>
       <div className="content">
         <Routes>
-        <Route path="/" element={<Navigate replace to="/random" />} />
+        <Route path="/" element={<Navigate replace to="/giphy" />} />
           <Route path="/random" element={<Random />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/giphy" element={<Giphy />}></Route>
-          <Route path="/categories" element={<Categories />}></Route>
           <Route path="/giphy/:itemId" element={<Detail />}></Route>
+          <Route path="/categories" element={<Categories />}></Route>
+          <Route path="/categories/:categoriesName" element={<DetailCT />}></Route>
 
         </Routes>
         <footer>
           <div className="containernav">
+            <NavLink to="/giphy" className="iconwrapper">
+              Trending
+            </NavLink>
             <NavLink to="/random" className="iconwrapper">
               Random Image
-            </NavLink>
-            <NavLink to="/giphy" className="iconwrapper">
-              Breeds
             </NavLink>
             <NavLink to="/categories" className="iconwrapper">
               Categories

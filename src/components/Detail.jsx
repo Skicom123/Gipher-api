@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, {useEffect,useState} from 'react';
 import "./Giphy.css"
 import { useParams } from 'react-router';
+import "./Detail.css"
 
 
 const Search = () => {
@@ -50,10 +51,10 @@ const Search = () => {
               {data === undefined ? 'loading' : data.map((item) => {
                 return (
                   <div key={item.id} className="container d-flex justify-content-center">
-                    <div>
+                    <div className="Content">
                       <img src={item.images.original.url} alt="gif" />
-                      <p>{item.title}</p>
-                      <p>Uploaded By: {item.username}</p>
+                      <p className="Title">{item.title}</p>
+                      <p className="Title">Uploaded By: {item.username}</p>
                     </div>
                   </div>
                 )

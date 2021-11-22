@@ -61,12 +61,15 @@ const Giphy = () => {
         }
     }
 
-    
+    // if (isLoading) {
+    //     return <h2 className="text-white text-center">Loading...</h2>
+    // }
+
     return (
         <div className="random-page d-flex flex-column align-items-center">
             {renderError()}
             <h1 className="text-center text-white mb-3">Random</h1>
-            <div className="container gifs mb-3">{renderGifs()}</div>
+            {isLoading ? <div className="text-white text-center mb-3">Loading...</div> : <div className="container gifs mb-3">{renderGifs()}</div>}
             <div className="centering">
                 <a className="btn btn-primary center" href="/random" role="button">Random Gif</a>
             </div>
