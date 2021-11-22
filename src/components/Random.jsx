@@ -45,7 +45,7 @@ const Giphy = () => {
             )}
             {data !== undefined && (
                 <div>
-                    <img src={data.images === undefined ? "" : data.images.original.url}></img>
+                    <img src={data.images === undefined ? "" : data.images.fixed_height.url}></img>
                 </div>
             )}
             </div>

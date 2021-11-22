@@ -40,7 +40,6 @@ const App = () => {
                 <Route path="/giphy/:itemId" element={<Detail />}></Route>
                 <Route path="/random" element={<Random/>}></Route>
                 <Route path="/categories" element={<Categories/>}></Route>
-                {/* <Route path="/Search" element={<Search/>}></Route> */}
                 <Route path="/About" element = {<About/>}></Route>
             </Routes>
         </div>
