@@ -51,7 +51,7 @@ const Search = () => {
                 return (
                   <div key={item.id} className="container d-flex justify-content-center">
                     <div>
-                      <img src={item.images.fixed_height.url} alt="gif" />
+                      <img src={item.images.original.url} alt="gif" />
                       <p>{item.title}</p>
                       <p>Uploaded By: {item.username}</p>
                     </div>
