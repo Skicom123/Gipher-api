@@ -64,7 +64,7 @@ const Giphy = () => {
       if (search === undefined || isLoading) {
         return (
            <div className="text-white text-center">
-             Loading...
+             Click one of the categories
             </div>
         )
       }

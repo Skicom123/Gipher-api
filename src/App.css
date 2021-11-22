@@ -1,20 +1,74 @@
-body {
-    background-color: black;
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  pad: 20px;
+  padding-top: 100px;
 }
 
-.gifs{
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.containernav {
+  padding: 20px 0px;
+  max-width: 440px;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  color: blue;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+h1 {
+  color: rebeccapurple;
+}
+
+.containerhead {
+  max-width: 440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+}
+
+.iconwrapper {
+  color: red;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+.gifs {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gif {
-    padding: 0 2px;
+  padding: 0 2px;
 }
 
-.loader{
-    color: blue;
+.loader {
+  color: blue;
 }
-
